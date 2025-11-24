@@ -29,3 +29,6 @@ git fetch template && git checkout template/main .github
 (https://github.com/cpppracticum/cpp-backend-template-practicum-november/actions),
 
 который позволит увидеть результат прохождения тестов.
+
+next commit
+
