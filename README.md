@@ -31,4 +31,5 @@ git fetch template && git checkout template/main .github
 который позволит увидеть результат прохождения тестов.
 
 next commit
+next commit
 
