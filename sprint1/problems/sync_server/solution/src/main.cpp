@@ -53,12 +53,14 @@ StringResponse HandleRequest(StringRequest&& req) {
     
     // Проверяем метод запроса
     if (req.method() != http::verb::get && req.method() != http::verb::head) {
+
         response.result(http::status::method_not_allowed);
         response.set(http::field::content_type, "text/html");
         response.set(http::field::allow, "GET, HEAD");
-        response.body() = "Invalid method.";
+        response.body() = "Invalid method";
         response.prepare_payload();
         return response;
+
     }
     
     // Извлекаем target из URL (убираем ведущий символ '/')
